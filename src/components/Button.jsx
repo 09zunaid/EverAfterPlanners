@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Button = ({ children, to, variant = 'primary', className = '', ...props }) => {
+export const Button = ({ children, to, variant = 'primary', className = '', ...props }) => {
   const baseClass = `btn btn-${variant} ${className}`;
 
   if (to) {
