@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { Filter } from 'lucide-react';
 
+import p1 from '../assets/portfolio/p1.jpg';
+import p2 from '../assets/portfolio/p2.jpg';
+import p3 from '../assets/portfolio/p3.jpg';
+import p4 from '../assets/portfolio/p4.jpg';
+import p5 from '../assets/portfolio/p5.jpg';
+import p6 from '../assets/portfolio/p6.jpg';
+
 const Portfolio = () => {
     const [filter, setFilter] = useState('All');
 
@@ -8,12 +15,12 @@ const Portfolio = () => {
 
     // Real Unsplash images for a premium look
     const projects = [
-        { id: 1, title: "Sarah & James", category: "Summer", style: "Classic", image: "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 2, title: "Emily & Michael", category: "Fall", style: "Bohemian", image: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 3, title: "Jessica & David", category: "Winter", style: "Modern", image: "https://images.unsplash.com/photo-1511285560982-1356311d0588?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 4, title: "Amanda & Chris", category: "Spring", style: "Classic", image: "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 5, title: "Olivia & Ryan", category: "Summer", style: "Modern", image: "https://images.unsplash.com/photo-1522673607200-1645062eff49?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-        { id: 6, title: "Sophia & Ethan", category: "Fall", style: "Bohemian", image: "https://images.unsplash.com/photo-1509927083124-9397605e4337?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+        { id: 1, title: "Sarah & James", category: "Summer", style: "Classic", image: p1 },
+        { id: 2, title: "Emily & Michael", category: "Fall", style: "Bohemian", image: p2 },
+        { id: 3, title: "Jessica & David", category: "Winter", style: "Modern", image: p3 },
+        { id: 4, title: "Amanda & Chris", category: "Spring", style: "Classic", image: p4 },
+        { id: 5, title: "Olivia & Ryan", category: "Summer", style: "Modern", image: p5 },
+        { id: 6, title: "Sophia & Ethan", category: "Fall", style: "Bohemian", image: p6 },
     ];
 
     const filteredProjects = filter === 'All'

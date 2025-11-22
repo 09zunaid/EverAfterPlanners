@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star } from 'lucide-react';
 import Button from '../components/Button';
+import heroImg from '../assets/hero.jpg';
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
             {/* Hero Section */}
             <section style={{
                 height: '90vh',
-                backgroundImage: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://images.unsplash.com/photo-1519225421980-715cb0202128?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80")',
+                backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${heroImg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 display: 'flex',

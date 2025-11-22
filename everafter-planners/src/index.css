@@ -5,20 +5,21 @@
   /* Primary Colors */
   --color-blush: #F8E7E0;
   --color-sage: #C8D5C8;
-  
+
   /* Secondary Colors */
   --color-ivory: #FDF9F5;
   --color-white: #FFFFFF;
-  
+
   /* Accents & Text */
   --color-charcoal: #3A3A3A;
   --color-navy: #2C3E50;
-  --color-gold: #D4AF37; /* Added for subtle elegance */
-  
+  --color-gold: #D4AF37;
+  /* Added for subtle elegance */
+
   /* Typography */
   --font-heading: 'Cormorant Garamond', serif;
   --font-body: 'Lora', serif;
-  
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
@@ -41,7 +42,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 400;
   line-height: 1.2;
@@ -85,10 +91,21 @@ img {
   padding: 0 var(--spacing-sm);
 }
 
-.text-center { text-align: center; }
-.text-blush { color: var(--color-blush); }
-.bg-blush { background-color: var(--color-blush); }
-.bg-sage { background-color: var(--color-sage); }
+.text-center {
+  text-align: center;
+}
+
+.text-blush {
+  color: var(--color-blush);
+}
+
+.bg-blush {
+  background-color: var(--color-blush);
+}
+
+.bg-sage {
+  background-color: var(--color-sage);
+}
 
 .btn {
   display: inline-block;
@@ -125,10 +142,19 @@ img {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
+  opacity: 0;
+  /* Start hidden to prevent flicker */
   animation: fadeIn 1s ease-out forwards;
 }
